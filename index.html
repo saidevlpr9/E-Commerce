@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+                integrity="sha512 KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header>
+    <div class="logo">STUDENT <br>ASSISTANT</div>
+    <div class="top-bar">      
+      <input type="text" class="search-bar" placeholder="Search...">
+      <i id="search" class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="user-options">
+      <button class="btn">Sign In</button>
+    </div>
+    <div class="user-options">
+      <button class="btn">Log Out</button>
+    </div>
+    <div class="dropdownbtn">
+      <button class="dropbtn">My Profile</button>
+      <div class="dropdown-content">
+        <a href="#">Edit Product</a>
+        <a href="#">Edit User Details</a>
+        <a href="#">See My Listed Products</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Product Cards -->
+    <div class="product-card">
+      <form id="productForm">
+        <label for="productImage">Product Image URL:</label><br>
+        <input type="text" id="productImage" name="productImage" required><br>
+        <label for="productTitle">Product Title:</label><br>
+        <input type="text" id="productTitle" name="productTitle" required><br>
+        <label for="productPrice">Product Price:</label><br>
+        <input type="number" id="productPrice" name="productPrice" step="0.01" required><br><br>
+        <button type="submit" class="btn add-to-MyList">Add to MyList</button>
+      </form>
+    </div>
+
+    <!-- WishList -->
+    <div class="product-card">
+      <form id="productForm">
+        <label for="productImage">Product Image URL:</label><br>
+        <input type="text" id="productImage" name="productImage" required><br>
+        <label for="productTitle">Product Title:</label><br>
+        <input type="text" id="productTitle" name="productTitle" required><br>
+        <label for="productPrice">Product Price:</label><br>
+        <input type="number" id="productPrice" name="productPrice" step="0.01" required><br><br>
+        <button type="submit" class="btn add-to-MyList">Add to WishList</button>
+      </form>
+    </div>
+
+
+    <div class=""
+
+  
+    <!-- Expanded Product Card -->
+    <div class="expanded-product-card">
+      <!-- Details about the product -->
+      <div class="product-details">
+        <h2>Product Title</h2>
+        <p>Description of the product</p>
+        <button class="btn chat-with-seller">Chat with Seller</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 E-commerce Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
